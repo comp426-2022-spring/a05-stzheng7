@@ -2,7 +2,7 @@
 const express = require('express')
 const app = express()
 const morgan = require('morgan')
-const logdb = require('./database')
+const logdb = require('./src/services/database.js')
 const fs = require('fs')
 
 const args = require('minimist')(process.argv.slice(2))
